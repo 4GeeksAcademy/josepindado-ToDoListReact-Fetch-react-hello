@@ -3,8 +3,8 @@ import TodoList from "./todolist";
 
 
 const Home = () => {
+    const [inputValue, setInputValue] = useState("");
   const [tasks, setTasks] = useState([]);
-  const [inputValue, setInputValue] = useState("");
 
   const handleAddTask = (e) => {
     if (e.key === "Enter" && inputValue.trim()) {
